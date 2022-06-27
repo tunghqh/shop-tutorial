@@ -1,0 +1,149 @@
+.detail {
+  margin: 160px 160px;
+
+  @media screen and (max-width: 830px) {
+    margin: 160px 20px;
+  }
+
+  @media screen and (max-width: 420px) {
+    margin: 120px 20px;
+  }
+}
+.title {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  span:nth-child(2) {
+    margin: 0 6px;
+  }
+  span:nth-child(3) {
+    color: var(--primary);
+  }
+}
+.inner {
+  display: flex;
+  img {
+    width: 600px;
+    border-radius: 10px;
+
+    @media screen and (max-width: 830px) {
+      width: 780px;
+    }
+    @media screen and (max-width: 420px) {
+      width: 310px;
+    }
+  }
+  @media screen and (max-width: 830px) {
+    display: block;
+  }
+}
+
+.right {
+  margin-left: 30px;
+
+  .inner {
+    display: block;
+  }
+  @media screen and (max-width: 830px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 420px) {
+    margin: 0;
+  }
+}
+.name {
+  font-size: 2.2rem;
+  font-weight: 40;
+  margin-bottom: 20px;
+}
+.trademark {
+  margin-right: 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 107%;
+    transform: translateY(-50%);
+    height: 12px;
+    width: 1px;
+    background-color: var(--text-color);
+  }
+}
+.price {
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+
+  span:nth-child(1) {
+    color: var(--primary);
+    font-size: 3rem;
+    margin-right: 20px;
+  }
+  span:nth-child(2) {
+    font-size: 1.6rem;
+    color: #ccc;
+    text-decoration: line-through;
+  }
+}
+.info {
+  margin: 30px 0;
+}
+.color {
+
+  @media screen and (max-width: 420px) {
+    display: flex;
+    
+  }
+  .img {
+    width: 100px;
+    margin-right: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+
+    
+    .active {
+      width: 100px;
+      margin-right: 20px;
+      opacity: 1;
+    }
+  }
+}
+.right-bot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+.soluong {
+  display: flex;
+  align-items: center;
+  input {
+    height: 40px;
+    width: 80px;
+
+    @media screen and (max-width: 420px) {
+      margin-left: 10px;
+    }
+  }
+}
+.call {
+  span {
+    color: var(--primary);
+  }
+}
+.adds {
+  button {
+    @media screen and (max-width: 420px) {
+      font-size: 10px;
+      margin-right: 10px;
+    }
+
+  }
+}
+.tags {
+  margin-top: 30px;
+}

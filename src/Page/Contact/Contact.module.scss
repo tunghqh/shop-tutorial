@@ -1,0 +1,55 @@
+.contact {
+    margin: 180px;
+    display: flex;
+    @media screen and (max-width: 830px) {
+        display: flex;
+        justify-content: center;
+        height: 43vh;
+      }
+}
+.form{
+    display: flex;
+    flex-direction: column;
+
+    input{
+        width: 600px;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        height: 100px;
+        font-size: 1.6rem;
+
+        @media screen and (max-width: 420px) {
+            width: 310px;
+        }
+    }
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    input{
+        height: 40px;
+        
+        @media screen and (max-width: 420px) {
+            width: 310px;
+        }
+    }
+
+}
+.item {
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+
+    img{
+        width: 300px;
+    }
+    @media screen and (max-width: 830px) {
+        display: none;
+      }
+}

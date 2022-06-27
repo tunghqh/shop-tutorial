@@ -1,0 +1,51 @@
+.footer {
+  background-color: #1b1b1b;
+  color: var(--while);
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+
+  @media screen and (max-width: 420px) {
+    font-size: 10px;
+  }
+}
+.left {
+  p {
+    margin-top: 20px;
+  }
+  @media screen and (max-width: 830px) {
+    width: 200px;
+  }
+
+  img {
+    @media screen and (max-width: 830px) {
+      width: 100px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    margin: auto;
+  }
+}
+.right {
+  h4 {
+    font-weight: 400;
+  }
+
+  @media screen and (max-width: 420px) {
+    display: none;
+  }
+}
+.footer-menu {
+  a {
+    display: block;
+    color: var(--while);
+    margin-top: 10px;
+    transition: margin-left 0.2s ease;
+
+    &:hover {
+      color: var(--primary);
+      margin-left: 6px;
+    }
+  }
+}
